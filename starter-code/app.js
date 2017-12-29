@@ -5,7 +5,7 @@ var router = require('./candyRouter');
 const PORT = process.env.PORT || 6699;
 
 app.use(bodyParser.json());
-app.use('/', router);
+app.use('/candies', router);
 //How do we redirect the /candies path
 //through our candyRouter?
 
