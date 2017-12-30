@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var router = require('./candyRouter');
-const PORT = process.env.PORT || 6699;
+var PORT = process.env.PORT || 6699;
 
 app.use(bodyParser.json());
 app.use('/candies', router);
